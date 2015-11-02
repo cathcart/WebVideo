@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bower": "^1.6.3",
+    "express": "^4.13.3",
+    "fs": "0.0.2",
+    "fs-readdir-recursive": "^1.0.0"
+  }
+}
