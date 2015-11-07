@@ -1,11 +1,12 @@
 var fs = require('fs');
 var read = require('fs-readdir-recursive');
 var path = require('path');
-var videoDir = '/videos/';
+var config = require('../config.json');
+var videoDir = config.videoDir;//'/video/';
 
 module.exports = function(app) {
 	// api ---------------------------------------------------------------------
-	// get all todos
+	// get all 
 	app.get('/api/video', function(req, res) {
 
 		var videoFile = path.resolve(videoDir + req.query.file);

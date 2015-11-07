@@ -1,7 +1,8 @@
 // set up ======================================================================
+var config = require('./config.json')
 var express  = require('express');
 var app      = express(); 								// create our app w/ express
-var port  	 = 9000; 				// set the port
+var port  	 = config.port; 				// set the port
 
 // configuration ===============================================================
 app.use(express.static(__dirname + '/public')); 		// set the static files location /public/img will be /img for users
