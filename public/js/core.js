@@ -39,6 +39,7 @@ angular.module("videoApp").controller("mainCtrl", ['$scope', 'videos', function(
 	});
 }]);
 
+//list of videos
 angular.module("videoApp").factory('videos',['$http', function($http){
 	return $http.get('/api/videos')
 		.success(function(data){
